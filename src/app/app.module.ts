@@ -20,9 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
     SharedModule,
     HttpClientModule,
   ],
-  providers: [
-    provideAnimationsAsync()
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
