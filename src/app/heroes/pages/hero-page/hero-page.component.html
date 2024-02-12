@@ -9,7 +9,7 @@
 
 <div *ngIf="hero; else divLoading" class="grid p-2">
 
-  <mat-card class="col-12 sm:col-6">
+  <mat-card class="col-12 sm:col-6" style="width: 250px;">
 
     <mat-card-header>
       <mat-card-title>{{ hero.alter_ego }}</mat-card-title>
@@ -17,11 +17,11 @@
     </mat-card-header>
 
 
-    <img [src]="hero | heroImage" [alt]="hero.superhero" mat-card-image  />
+    <img [src]="hero | heroImage" [alt]="hero.superhero" mat-card-image width="220" height="400" />
 
   </mat-card>
 
-  <mat-card class="col-12 sm:col-6">
+  <mat-card class="col-12 sm:col-6 ml-2" style="width: 500px;">
 
     <mat-card-header>
       <mat-card-title>Información</mat-card-title>
@@ -37,7 +37,8 @@
       </mat-list>
 
 
-        <button class="mr-1"
+        <button
+        class="mr-1"
         mat-raised-button
         color="primary"
         (click)="goBack()"

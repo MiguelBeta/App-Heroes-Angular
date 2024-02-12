@@ -12,6 +12,7 @@ import { CardComponent } from './components/card/card.component';
 import { HeroImagePipe } from './pipes/hero-image.pipe';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { ConfirmaDialogComponent } from './components/confirma-dialog/confirma-dialog.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
     CardComponent,
 
     //Pipe
-    HeroImagePipe
+    HeroImagePipe,
+     ConfirmaDialogComponent
   ],
   imports: [
     CommonModule,
